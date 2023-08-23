@@ -2,7 +2,7 @@ import 'dotenv/config'
 let config= {};
 
 config.server= {
-    port: process.env.PORT,
+    port: process.env.PORT || 8080,
     // host: 'https://extraordinary-phoenix-b7fb9b.netlify.app',
     // host: 'http://localhost:8080',
     host: 'https://fitland-gym.vercel.app',
