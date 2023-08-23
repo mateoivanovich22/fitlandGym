@@ -3,8 +3,11 @@ let config= {};
 
 config.server= {
     port: process.env.PORT,
-    host: 'https://extraordinary-phoenix-b7fb9b.netlify.app',
-}
+    // host: 'https://extraordinary-phoenix-b7fb9b.netlify.app',
+    // host: 'http://localhost:8080',
+    host: 'https://fitland-gym.vercel.app',
+
+}s
 
 config.paypal= {
     clientID: process.env.clientID,
