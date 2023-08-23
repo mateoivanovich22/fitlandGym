@@ -7,7 +7,7 @@ config.server= {
     // host: 'http://localhost:8080',
     host: 'https://fitland-gym.vercel.app',
 
-}s
+}
 
 config.paypal= {
     clientID: process.env.clientID,
