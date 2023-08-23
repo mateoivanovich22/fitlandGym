@@ -5,7 +5,9 @@ config.server= {
     port: process.env.PORT,
     // host: 'https://extraordinary-phoenix-b7fb9b.netlify.app',
     // host: 'http://localhost:8080',
-    host: 'https://fitland-gym.vercel.app',
+    // host: 'https://fitland-gym.vercel.app',
+    host: 'https://fitland-wrph0k0e5-mateoivanovich22.vercel.app',
+
 
 }
 
