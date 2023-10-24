@@ -70,6 +70,6 @@ export const captureOrderPaypal = async(req,res) => {
 }
 
 export const cancelOrderPaypal = (req,res) => {
-    res.render("landingHome")
+    res.redirect("/")
 }
 

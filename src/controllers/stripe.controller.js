@@ -44,4 +44,6 @@ export const captureOrderStripe = async(req,res) => {
     res.render("successBuy" , {option})
 }
 
-export const cancelOrderStripe = async(req,res) => res.send("Cancel Order");
+export const cancelOrderStripe = (req,res) => {
+    res.redirect("/")
+}

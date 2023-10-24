@@ -7,8 +7,9 @@ const HOST = config.server.host
 const access_token = config.mercadogpago.access_token
 
 export const createOrderMercadopago = async(req,res) => {
-    // let { price } = req.body;
-    let price = 25
+    let { price } = req.body;
+
+    price = price * 700 // 700 es el valor del dolar, (buscar alguna api que diga el valor del dolar hoy en dia)
 
     const { option } = req.body
 
@@ -67,8 +68,8 @@ export const captureOrderMercadopago = async(req,res) => {
     res.render("successBuy" , {option})
 }
 
-export const cancelOrderMercadopago = async(req,res) => res.send("Cancel Order");
+export const cancelOrderMercadopago = async(req,res) => res.redirect("/");
 
-export const failureMercadopago = (req,res) => res.send("failure-mercadopago")
+export const failureMercadopago = (req,res) => res.redirect("/")
 
-export const pendingMercadopago = (req,res) => res.send("pending-mercadopago")
+export const pendingMercadopago = (req,res) => res.redirect("/")

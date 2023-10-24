@@ -4,7 +4,7 @@ const stripeBotton = document.getElementById("stripeBotton");
 stripeBotton.addEventListener("click", async () => {
 
     const price = stripeBotton.dataset.price;
-    const option = paypalBotton.dataset.option;
+    const option = stripeBotton.dataset.option;
 
     const response = await fetch("/create-order-stripe", {
         method: "POST",
@@ -18,4 +18,4 @@ stripeBotton.addEventListener("click", async () => {
 
     window.location.href = data.url
 
-} )
+})
