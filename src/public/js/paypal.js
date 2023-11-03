@@ -1,5 +1,11 @@
 const paypalBotton = document.getElementById("paypalBotton");
 
+const botonMenu = document.getElementById("botonMenu");
+
+botonMenu.addEventListener("click", () => {
+    window.location.href = "/"
+})
+
 paypalBotton.addEventListener("click", async () => {
 
     const price = paypalBotton.dataset.price;
